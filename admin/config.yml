@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: ezulaika13-star/astrumlogicum
+  name: git-gateway
+  branch: main
 branch: main
 media_folder: "images"
 public_folder: "/images"
