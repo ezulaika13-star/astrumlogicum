@@ -1,21 +1,16 @@
 backend:
-  name: git-gateway
-  branch: main
-
+  name: github
+  repo: ezulaika13-star/astrumlogicum
+branch: main
 media_folder: "images"
 public_folder: "/images"
-
 collections:
   - name: "essays"
     label: "Essays"
     folder: "essays"
     create: true
-    slug: "{{year}}-{{month}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - label: "Theme"
-        name: "category"
-        widget: "select"
-        options: ["Astrologers", "Literary Works", "New Research", "Chart Mechanics", "Case Studies"]
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
